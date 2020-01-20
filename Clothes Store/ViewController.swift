@@ -12,9 +12,19 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        APIRequests.GetProducts { ( response ) in
+            switch response {
+            
+            case .success(let listProducts):
+                dump(listProducts)
+            
+            case .failure(let error):
+                NSLog(error.localizedDescription)
+            }
+        }
+        
     }
-
 
 }
 
