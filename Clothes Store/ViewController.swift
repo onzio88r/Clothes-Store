@@ -13,12 +13,24 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        APIRequests.GetProducts { ( response ) in
+        //listProduct
+        APIRequests.ListProducts { ( response ) in
             switch response {
             
             case .success(let listProducts):
                 dump(listProducts)
             
+            case .failure(let error):
+                NSLog(error.localizedDescription)
+            }
+        }
+        
+        //getProduct
+        APIRequests.GetProduct(1) { ( response ) in
+            switch response {
+            case .success(let listProducts):
+                dump(listProducts)
+                
             case .failure(let error):
                 NSLog(error.localizedDescription)
             }

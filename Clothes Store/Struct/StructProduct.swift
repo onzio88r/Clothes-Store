@@ -9,7 +9,7 @@
 import Foundation
 
 // MARK: - ListProductElement
-struct ListProductElement: Codable {
+struct ProductElement: Codable {
     let productID: Int
     let name, category: String
     let price: Double
@@ -21,4 +21,4 @@ struct ListProductElement: Codable {
     }
 }
 
-typealias ListProduct = [ListProductElement]
+typealias ListProduct = [ProductElement]

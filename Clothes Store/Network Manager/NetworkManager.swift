@@ -19,6 +19,7 @@ enum HTTPRequest: String {
     case listProducts                  = "/products"
     case addTocart,removeFromCart      = "/cart"
     
+    
     func method() -> String {
         switch self {
        
@@ -31,6 +32,12 @@ enum HTTPRequest: String {
         case .removeFromCart:
             return HTTPMethods.DELETE.rawValue
         }
+    }
+    
+   static func getProduct(_ id:Int) -> String {
+        var mainPath = HTTPRequest.listProducts.rawValue
+        mainPath.append(String(id))
+        return mainPath
     }
 }
 
