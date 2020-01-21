@@ -25,9 +25,9 @@ extension ProductViewController {
         super.viewDidLoad()
 
         name.text = viewModel.name
-        category.text = viewModel.category
-        price.text = String(viewModel.price)
-        stock.text = String(viewModel.stock)
+        category.text = "Category: \(viewModel.category)"
+        price.text = "Price: \(String(viewModel.price))"
+        stock.text = "Stock \(String(viewModel.stock))"
         
     }
     

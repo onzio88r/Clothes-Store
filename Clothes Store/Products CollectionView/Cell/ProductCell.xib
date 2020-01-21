@@ -51,21 +51,30 @@
                             <constraint firstAttribute="width" constant="97" id="pXN-tU-cXe"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                     </textField>
                     <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="CIj-oc-FD7">
                         <rect key="frame" x="84" y="72.5" width="20" height="20"/>
                     </activityIndicatorView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lb-cY-huc">
+                        <rect key="frame" x="8" y="59" width="172" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="DZJ-v3-uvP" firstAttribute="top" secondItem="gei-3u-ZPM" secondAttribute="bottom" constant="8" id="2pb-rk-7oc"/>
+                    <constraint firstAttribute="trailing" secondItem="7lb-cY-huc" secondAttribute="trailing" constant="8" id="3ct-vI-BrZ"/>
                     <constraint firstAttribute="trailing" secondItem="gei-3u-ZPM" secondAttribute="trailing" constant="8" id="3gd-bs-tdc"/>
                     <constraint firstItem="gei-3u-ZPM" firstAttribute="centerX" secondItem="mr1-Tw-rBm" secondAttribute="centerX" id="6Rc-4k-ZnG"/>
                     <constraint firstItem="DZJ-v3-uvP" firstAttribute="centerX" secondItem="mr1-Tw-rBm" secondAttribute="centerX" id="DWb-va-ADP"/>
+                    <constraint firstItem="7lb-cY-huc" firstAttribute="leading" secondItem="mr1-Tw-rBm" secondAttribute="leading" constant="8" id="Eeu-by-nTY"/>
                     <constraint firstItem="gei-3u-ZPM" firstAttribute="top" secondItem="mr1-Tw-rBm" secondAttribute="top" constant="8" id="GxO-1G-MXz"/>
                     <constraint firstItem="7md-oM-GQx" firstAttribute="top" secondItem="DZJ-v3-uvP" secondAttribute="bottom" constant="37" id="Ph2-2p-r42"/>
                     <constraint firstAttribute="trailing" secondItem="DZJ-v3-uvP" secondAttribute="trailing" constant="8" id="WKw-aF-VLy"/>
                     <constraint firstItem="7md-oM-GQx" firstAttribute="leading" secondItem="mr1-Tw-rBm" secondAttribute="leading" constant="8" id="c7Q-60-xWP"/>
+                    <constraint firstItem="7lb-cY-huc" firstAttribute="top" secondItem="DZJ-v3-uvP" secondAttribute="bottom" constant="1" id="exd-0A-Ixe"/>
                     <constraint firstItem="kOH-f4-BMO" firstAttribute="top" secondItem="DZJ-v3-uvP" secondAttribute="bottom" constant="30" id="i2v-Un-nrF"/>
                     <constraint firstItem="RyW-IE-6Cj" firstAttribute="centerX" secondItem="mr1-Tw-rBm" secondAttribute="centerX" id="nPQ-Xv-iWr"/>
                     <constraint firstItem="RyW-IE-6Cj" firstAttribute="top" secondItem="kOH-f4-BMO" secondAttribute="bottom" constant="8" id="oC6-Vw-0Yl"/>
@@ -77,10 +86,10 @@
                     <constraint firstItem="gei-3u-ZPM" firstAttribute="leading" secondItem="mr1-Tw-rBm" secondAttribute="leading" constant="8" id="yuu-SH-yEu"/>
                 </constraints>
             </collectionViewCellContentView>
-            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <size key="customSize" width="188" height="165"/>
             <connections>
                 <outlet property="addToCart" destination="RyW-IE-6Cj" id="WZs-0o-mu3"/>
+                <outlet property="errorMessage" destination="7lb-cY-huc" id="NUP-01-RIX"/>
                 <outlet property="loadingIndicator" destination="CIj-oc-FD7" id="TMc-bv-0Ka"/>
                 <outlet property="name" destination="gei-3u-ZPM" id="ktK-YP-iH0"/>
                 <outlet property="quantityAvailable" destination="DZJ-v3-uvP" id="zXH-Ju-X6L"/>
