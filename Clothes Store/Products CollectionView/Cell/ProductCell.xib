@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="pxW-HV-aJh" customClass="ProductCollectionViewCell" customModule="Clothes_Store" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="188" height="165"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="mr1-Tw-rBm">
+                <rect key="frame" x="0.0" y="0.0" width="188" height="165"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyW-IE-6Cj">
+                        <rect key="frame" x="22" y="130" width="144" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="JMD-im-CVC"/>
+                            <constraint firstAttribute="width" constant="144" id="s1P-jG-POv"/>
+                        </constraints>
+                        <state key="normal" title="Add to cart"/>
+                        <connections>
+                            <action selector="addToCart:" destination="pxW-HV-aJh" eventType="touchUpInside" id="5oA-5L-WGg"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gei-3u-ZPM">
+                        <rect key="frame" x="8" y="8" width="172" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantity Available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZJ-v3-uvP">
+                        <rect key="frame" x="8" y="37" width="172" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7md-oM-GQx">
+                        <rect key="frame" x="8" y="95" width="65" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kOH-f4-BMO">
+                        <rect key="frame" x="83" y="88" width="97" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="97" id="pXN-tU-cXe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    </textField>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="CIj-oc-FD7">
+                        <rect key="frame" x="84" y="72.5" width="20" height="20"/>
+                    </activityIndicatorView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DZJ-v3-uvP" firstAttribute="top" secondItem="gei-3u-ZPM" secondAttribute="bottom" constant="8" id="2pb-rk-7oc"/>
+                    <constraint firstAttribute="trailing" secondItem="gei-3u-ZPM" secondAttribute="trailing" constant="8" id="3gd-bs-tdc"/>
+                    <constraint firstItem="gei-3u-ZPM" firstAttribute="centerX" secondItem="mr1-Tw-rBm" secondAttribute="centerX" id="6Rc-4k-ZnG"/>
+                    <constraint firstItem="DZJ-v3-uvP" firstAttribute="centerX" secondItem="mr1-Tw-rBm" secondAttribute="centerX" id="DWb-va-ADP"/>
+                    <constraint firstItem="gei-3u-ZPM" firstAttribute="top" secondItem="mr1-Tw-rBm" secondAttribute="top" constant="8" id="GxO-1G-MXz"/>
+                    <constraint firstItem="7md-oM-GQx" firstAttribute="top" secondItem="DZJ-v3-uvP" secondAttribute="bottom" constant="37" id="Ph2-2p-r42"/>
+                    <constraint firstAttribute="trailing" secondItem="DZJ-v3-uvP" secondAttribute="trailing" constant="8" id="WKw-aF-VLy"/>
+                    <constraint firstItem="7md-oM-GQx" firstAttribute="leading" secondItem="mr1-Tw-rBm" secondAttribute="leading" constant="8" id="c7Q-60-xWP"/>
+                    <constraint firstItem="kOH-f4-BMO" firstAttribute="top" secondItem="DZJ-v3-uvP" secondAttribute="bottom" constant="30" id="i2v-Un-nrF"/>
+                    <constraint firstItem="RyW-IE-6Cj" firstAttribute="centerX" secondItem="mr1-Tw-rBm" secondAttribute="centerX" id="nPQ-Xv-iWr"/>
+                    <constraint firstItem="RyW-IE-6Cj" firstAttribute="top" secondItem="kOH-f4-BMO" secondAttribute="bottom" constant="8" id="oC6-Vw-0Yl"/>
+                    <constraint firstItem="kOH-f4-BMO" firstAttribute="leading" secondItem="7md-oM-GQx" secondAttribute="trailing" constant="10" id="oi1-hn-hfh"/>
+                    <constraint firstItem="CIj-oc-FD7" firstAttribute="centerX" secondItem="mr1-Tw-rBm" secondAttribute="centerX" id="pfI-rt-EdF"/>
+                    <constraint firstItem="CIj-oc-FD7" firstAttribute="centerY" secondItem="mr1-Tw-rBm" secondAttribute="centerY" id="r0Q-sl-Mek"/>
+                    <constraint firstItem="DZJ-v3-uvP" firstAttribute="leading" secondItem="mr1-Tw-rBm" secondAttribute="leading" constant="8" id="vVG-YU-44n"/>
+                    <constraint firstAttribute="trailing" secondItem="kOH-f4-BMO" secondAttribute="trailing" constant="8" id="w9Z-sh-XjN"/>
+                    <constraint firstItem="gei-3u-ZPM" firstAttribute="leading" secondItem="mr1-Tw-rBm" secondAttribute="leading" constant="8" id="yuu-SH-yEu"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <size key="customSize" width="188" height="165"/>
+            <connections>
+                <outlet property="addToCart" destination="RyW-IE-6Cj" id="WZs-0o-mu3"/>
+                <outlet property="loadingIndicator" destination="CIj-oc-FD7" id="TMc-bv-0Ka"/>
+                <outlet property="name" destination="gei-3u-ZPM" id="ktK-YP-iH0"/>
+                <outlet property="quantityAvailable" destination="DZJ-v3-uvP" id="zXH-Ju-X6L"/>
+                <outlet property="quantitySelected" destination="kOH-f4-BMO" id="px5-zJ-JHY"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="122.87946428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>
