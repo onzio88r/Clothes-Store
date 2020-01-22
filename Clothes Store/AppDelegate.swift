@@ -8,13 +8,15 @@
 
 import UIKit
 
+var CartManager:CartViewModel!
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        CartManager = CartViewModel.sharedInstance
+        
         return true
     }
 

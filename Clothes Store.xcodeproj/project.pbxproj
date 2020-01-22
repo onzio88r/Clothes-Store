@@ -16,6 +16,8 @@
 		0875789123D77F8500763B9A /* ProductsCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0875789023D77F8500763B9A /* ProductsCollectionDelegate.swift */; };
 		0875789423D77FF400763B9A /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0875789323D77FF400763B9A /* ProductsViewModel.swift */; };
 		089AFF7923D8F5BB0080C054 /* HTTPEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089AFF7823D8F5BB0080C054 /* HTTPEnum.swift */; };
+		089AFF7B23D8F81A0080C054 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089AFF7A23D8F81A0080C054 /* CartViewController.swift */; };
+		089AFF7D23D8F85B0080C054 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089AFF7C23D8F85B0080C054 /* CartViewModel.swift */; };
 		08AF3CF523D62BA20086B5BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AF3CF423D62BA20086B5BD /* AppDelegate.swift */; };
 		08AF3CF723D62BA20086B5BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AF3CF623D62BA20086B5BD /* SceneDelegate.swift */; };
 		08AF3CF923D62BA20086B5BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AF3CF823D62BA20086B5BD /* ViewController.swift */; };
@@ -37,6 +39,8 @@
 		0875789023D77F8500763B9A /* ProductsCollectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCollectionDelegate.swift; sourceTree = "<group>"; };
 		0875789323D77FF400763B9A /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
 		089AFF7823D8F5BB0080C054 /* HTTPEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPEnum.swift; sourceTree = "<group>"; };
+		089AFF7A23D8F81A0080C054 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		089AFF7C23D8F85B0080C054 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
 		08AF3CF123D62BA20086B5BD /* Clothes Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clothes Store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08AF3CF423D62BA20086B5BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08AF3CF623D62BA20086B5BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				0875789323D77FF400763B9A /* ProductsViewModel.swift */,
+				089AFF7C23D8F85B0080C054 /* CartViewModel.swift */,
 			);
 			path = "Views Model";
 			sourceTree = "<group>";
@@ -84,6 +89,7 @@
 				0875788C23D77BA300763B9A /* ProductsCollectionViewController.swift */,
 				08AF3CF823D62BA20086B5BD /* ViewController.swift */,
 				080D0F4423D7936E006AFB26 /* ProductViewController.swift */,
+				089AFF7A23D8F81A0080C054 /* CartViewController.swift */,
 			);
 			path = "Views Controller";
 			sourceTree = "<group>";
@@ -243,9 +249,11 @@
 				080D0F4523D7936E006AFB26 /* ProductViewController.swift in Sources */,
 				08AF3D0A23D62D780086B5BD /* NetworkManager.swift in Sources */,
 				08AF3CF923D62BA20086B5BD /* ViewController.swift in Sources */,
+				089AFF7D23D8F85B0080C054 /* CartViewModel.swift in Sources */,
 				080D0F3F23D784E5006AFB26 /* ProductCollectionViewCell.swift in Sources */,
 				0875788F23D77F2400763B9A /* ProductsCollectionDataSource.swift in Sources */,
 				0875789123D77F8500763B9A /* ProductsCollectionDelegate.swift in Sources */,
+				089AFF7B23D8F81A0080C054 /* CartViewController.swift in Sources */,
 				08AF3D0C23D636650086B5BD /* APIRequests.swift in Sources */,
 				0875788D23D77BA300763B9A /* ProductsCollectionViewController.swift in Sources */,
 				080D0F4323D78D8B006AFB26 /* SectionHeaderView.swift in Sources */,

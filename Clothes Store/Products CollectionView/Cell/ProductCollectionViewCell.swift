@@ -96,6 +96,9 @@ class ProductCollectionViewCell: UICollectionViewCell {
                     print(cartProduct)
                     self.stockQuantity -= self.cartQuantitySelected
                     
+                    CartManager.cartProducts.append(cartProduct)
+                    
+                    
                 case .failure(let error) :
                     NSLog(error.localizedDescription)
                     

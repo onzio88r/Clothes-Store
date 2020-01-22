@@ -24,6 +24,7 @@ extension ViewController {
             
             case .success(let listProducts):
             
+                CartManager.listProducts = listProducts
                 self.products = listProducts
                 
             case .failure(let error):
