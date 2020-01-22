@@ -14,7 +14,7 @@ struct ProductElement: Codable {
     let name, category: String
     let price: Double
     let stock: Int
-
+    
     enum CodingKeys: String, CodingKey {
         case productID = "productId"
         case name, category, price , stock
@@ -22,3 +22,10 @@ struct ProductElement: Codable {
 }
 
 typealias ListProduct = [ProductElement]
+
+
+//MARK: Product in cart
+struct CartProduct: Codable {
+    let cartId: Int
+    let productId: Int
+}

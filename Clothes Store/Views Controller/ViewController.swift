@@ -33,6 +33,9 @@ extension ViewController {
         
     }
 
+    
+    /// Show catalog action
+    /// - Parameter sender: 
     @IBAction func showCatalog(_ sender: Any) {
         self.performSegue(withIdentifier: "showCatalog", sender: self)
     }
@@ -45,9 +48,6 @@ extension ViewController {
                     productCtrl.viewModel = ProductsViewModels(products: self.products)
                 }
             }
-            
-           
-            
         }
     }
 }

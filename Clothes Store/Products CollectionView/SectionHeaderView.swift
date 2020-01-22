@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+/// Custom class to create a header for the collection view
 class SectionHeaderView: UICollectionReusableView {
     @IBOutlet weak var headerLabel: UILabel!
     
